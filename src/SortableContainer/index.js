@@ -545,7 +545,7 @@ export default function sortableContainer(WrappedComponent, config = {withRef: f
 
       this.helper.style[
         `${vendorPrefix}Transform`
-      ] = `translate3d(${translate.x}px,${translate.y}px, 0)`;
+      ] = `translate(${translate.x}px,${translate.y}px)`;
     }
 
     animateNodes() {
@@ -702,7 +702,7 @@ export default function sortableContainer(WrappedComponent, config = {withRef: f
             }
           }
         }
-        node.style[`${vendorPrefix}Transform`] = `translate3d(${translate.x}px,${translate.y}px,0)`;
+        node.style[`${vendorPrefix}Transform`] = `translate(${translate.x}px,${translate.y}px)`;
       }
 
       if (this.newIndex == null) {
